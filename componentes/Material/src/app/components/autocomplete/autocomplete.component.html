@@ -1,6 +1,15 @@
-<p>autocomplete works!</p>
-<form>
-    <mat-form-field>
-        <input type="text" matInput>
+<div class="container">
+    <form>
+        <h1>Seleccione un país</h1>
+    <mat-form-field class="example-form">
+        <mat-label>Selecione un pais</mat-label>
+        <input type="text" matInput 
+        [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" class="example-full-width">
+            <mat-option *ngFor="let option of options" [value]="option">
+                 {{option}}
+            </mat-option>
+        </mat-autocomplete>
     </mat-form-field>
 </form>
+</div>
