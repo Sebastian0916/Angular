@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
   title = 'material';
+
+  links = [
+    {
+      name: "Inicio",
+      url: "home"
+    },
+    {
+      name: "Lista",
+      url: "list"
+    },
+    {
+      name: "Formulario",
+      url: "form"
+    }
+  ]
 }
