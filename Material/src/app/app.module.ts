@@ -13,6 +13,8 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatListModule} from '@angular/material/list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -31,7 +33,8 @@ import {MatInputModule} from '@angular/material/input';
     MatChipsModule,
     MatListModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
