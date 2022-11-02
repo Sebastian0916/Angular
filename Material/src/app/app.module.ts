@@ -8,20 +8,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatChipsModule} from '@angular/material/chips';
-import {MatListModule} from '@angular/material/list';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-
-
-
-
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AlertsComponent } from './components/alerts/alerts.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ],
+  declarations: [AppComponent, NavbarComponent, AlertsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,7 +30,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
