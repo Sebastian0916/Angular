@@ -37,7 +37,7 @@
 ///outline
 .primary.mat-snack-bar-container {
     background: $primary-color;
-    color: red;
+    color: $white-color;
     .mat-simple-snackbar-action {
         color: $white-color;
     }
@@ -65,4 +65,9 @@
     .mat-simple-snackbar-action {
         color: $white-color;
     }
+}
+
+.mat-checkbox-indeterminate.mat-success .mat-checkbox-background,
+.mat-checkbox-checked.mat-success .mat-checkbox-background {
+    background-color: $success-color;
 }
