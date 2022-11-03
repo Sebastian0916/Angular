@@ -1,0 +1,16 @@
+// BOTONES
+.mat-flat-button.mat-success,
+.mat-raised-button.mat-success,
+.mat-icon-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+    color: $white-color;
+    background-color: $success-color;
+}
+
+.mat-stroked-button.mat-success,
+.mat-button.mat-success {
+    color: $success-color;
+    background-color: $white-color;
+}

@@ -15,6 +15,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AlertsComponent } from './components/alerts/alerts.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+
+
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, AlertsComponent],
@@ -31,6 +42,14 @@ import { AlertsComponent } from './components/alerts/alerts.component';
     MatFormFieldModule,
     MatInputModule,
     MatSnackBarModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatSlideToggleModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent],

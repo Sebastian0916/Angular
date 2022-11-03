@@ -1,9 +1,26 @@
+<div class="body">
+  <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
+
+  <div class="tabs">
+    <mat-tab-group mat-align-tabs="center">
+      <mat-tab label="Botones">
+        
 <section>
   <div class="example-label">Basic</div>
   <div class="example-button-row">
     <button mat-button>Basic</button>
     <button mat-button color="primary">Primary</button>
-    <button mat-button color="success">success</button>
+    <button mat-button color="accent">Accent</button>
     <button mat-button color="warn">Warn</button>
     <button mat-button disabled>Disabled</button>
     <a mat-button href="https://www.google.com/" target="_blank">Link</a>
@@ -15,7 +32,7 @@
   <div class="example-button-row">
     <button mat-raised-button>Basic</button>
     <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="success">success</button>
+    <button mat-raised-button color="accent">Accent</button>
     <button mat-raised-button color="warn">Warn</button>
     <button mat-raised-button disabled>Disabled</button>
     <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
@@ -27,7 +44,7 @@
   <div class="example-button-row">
     <button mat-stroked-button>Basic</button>
     <button mat-stroked-button color="primary">Primary</button>
-    <button mat-stroked-button color="success">success</button>
+    <button mat-stroked-button color="accent">Accent</button>
     <button mat-stroked-button color="warn">Warn</button>
     <button mat-stroked-button disabled>Disabled</button>
     <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
@@ -39,7 +56,7 @@
   <div class="example-button-row">
     <button mat-flat-button>Basic</button>
     <button mat-flat-button color="primary">Primary</button>
-    <button mat-flat-button color="success">success</button>
+    <button mat-flat-button color="accent">Accent</button>
     <button mat-flat-button color="warn">Warn</button>
     <button mat-flat-button disabled>Disabled</button>
     <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
@@ -56,7 +73,7 @@
       <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
         <mat-icon>home</mat-icon>
       </button>
-      <button mat-icon-button color="success" aria-label="Example icon button with a menu icon">
+      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
         <mat-icon>menu</mat-icon>
       </button>
       <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
@@ -68,71 +85,42 @@
     </div>
   </div>
 </section>
-<mat-divider></mat-divider>
-<section>
-  <div class="example-label">FAB</div>
-  <div class="example-button-row">
-    <div class="example-flex-container">
-      <div class="example-button-container">
-        <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-          <mat-icon>delete</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-fab color="success" aria-label="Example icon button with a bookmark icon">
-          <mat-icon>bookmark</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-fab color="warn" aria-label="Example icon button with a home icon">
-          <mat-icon>home</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-fab disabled aria-label="Example icon button with a heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-      </div>
-    </div>
+      </mat-tab>
+      <mat-tab label="Inputs">
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Favorite food</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width " appearance="fill">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+          </mat-form-field>
+        </form>
+      </mat-tab>
+      <mat-tab label="snipper">
+
+        <mat-spinner color="primary"></mat-spinner>
+        <mat-spinner color="accent"></mat-spinner>
+        <mat-spinner color="warn"></mat-spinner>
+
+      </mat-tab>
+      <mat-tab label="slide-toggle">
+        <mat-slide-toggle color="success">Slide me!</mat-slide-toggle>
+        <mat-slide-toggle color="accent">Slide me!</mat-slide-toggle>
+        <mat-slide-toggle color="warn">Slide me!</mat-slide-toggle>
+
+      </mat-tab>
+      <mat-tab label="alerts">
+        <app-alerts> </app-alerts>
+      </mat-tab>
+      <mat-tab label="checkbox">
+        <section class="example-section">
+          <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+          <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+        </section>
+      </mat-tab>
+    </mat-tab-group>
   </div>
-</section>
-<mat-divider></mat-divider>
-<section>
-  <div class="example-label">Mini FAB</div>
-  <div class="example-button-row">
-    <div class="example-flex-container">
-      <div class="example-button-container">
-        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-mini-fab color="success" aria-label="Example icon button with a plus one icon">
-          <mat-icon>plus_one</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
-          <mat-icon>filter_list</mat-icon>
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
-          <mat-icon>home</mat-icon>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<mat-divider></mat-divider>
-
-<form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill" color="success">
-    <mat-label color="success">Email</mat-label>
-    <input type="email" matInput placeholder="Ex. pat@example.com">
-  </mat-form-field>
-</form>
-
-
-<mat-divider></mat-divider>
-
+</div>

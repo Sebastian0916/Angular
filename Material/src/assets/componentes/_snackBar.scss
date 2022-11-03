@@ -1,0 +1,68 @@
+////outline
+.primary-filled.mat-snack-bar-container {
+    background: $white-color;
+    color: $primary-color;
+    border: solid $primary-color 1px;
+    .mat-simple-snackbar-action {
+        color: $primary-color;
+    }
+}
+
+.accent-filled.mat-snack-bar-container {
+    background: $white-color;
+    color: $accent-color;
+    border: solid $accent-color 1px;
+    .mat-simple-snackbar-action {
+        color: $accent-color;
+    }
+}
+
+.warn-filled.mat-snack-bar-container {
+    background: $white-color;
+    border: solid $warn-color 1px;
+    color: $warn-color;
+    .mat-simple-snackbar-action {
+        color: $warn-color;
+    }
+}
+
+.success-filled.mat-snack-bar-container {
+    background: $white-color;
+    border: solid $success-color 1px;
+    color: $success-color;
+    .mat-simple-snackbar-action {
+        color: $success-color;
+    }
+}
+///outline
+.primary.mat-snack-bar-container {
+    background: $primary-color;
+    color: red;
+    .mat-simple-snackbar-action {
+        color: $white-color;
+    }
+}
+
+.accent.mat-snack-bar-container {
+    background: $accent-color;
+    color: $white-color;
+    .mat-simple-snackbar-action {
+        color: $white-color;
+    }
+}
+
+.warn.mat-snack-bar-container {
+    background: $warn-color;
+    color: $white-color;
+    .mat-simple-snackbar-action {
+        color: $white-color;
+    }
+}
+
+.success.mat-snack-bar-container {
+    background: $success-color;
+    color: $white-color;
+    .mat-simple-snackbar-action {
+        color: $white-color;
+    }
+}

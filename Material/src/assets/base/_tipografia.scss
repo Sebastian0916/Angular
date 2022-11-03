@@ -1,0 +1,13 @@
+@use "@angular/material" as mat;
+
+$custom-typography: mat.define-typography-config(
+    $font-family: '"Oswald",sans-serif',
+);
+
+$custom-theme: mat.define-light-theme(
+    (
+        typography: $custom-typography,
+    )
+);
+
+@include mat.all-component-themes($custom-theme);

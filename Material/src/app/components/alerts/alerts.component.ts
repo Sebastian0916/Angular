@@ -25,28 +25,28 @@ export class AlertsComponent implements OnInit {
     this.successFilled()
   }
   primaryOtuline() {
-    this._snackBar.open('Buen trabajo', 'Aceptar', {
+    this._snackBar.open('PRIMARI COLOR', 'Aceptar',{
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'primary',
     });
   }
   accentOtuline() {
-    this._snackBar.open('Gracias por participar', 'Aceptar', {
+    this._snackBar.open('ACCENT COLOR', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'accent'
     });
   }
   warnOtuline() {
-    this._snackBar.open('Error', 'Aceptar', {
+    this._snackBar.open('WARN COLOR', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'warn'
     });
   }
   successOtuline() {
-    this._snackBar.open('Buen trabajo ', 'Aceptar', {
+    this._snackBar.open('SUCCESS COLOR ', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'success'
@@ -54,28 +54,28 @@ export class AlertsComponent implements OnInit {
   }
   //filled
   primaryFilled() {
-    this._snackBar.open('Buen trabajo', 'Aceptar', {
+    this._snackBar.open('PRIMARY COLOR', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'primary-filled',
     });
   }
   accentFilled() {
-    this._snackBar.open('Gracias por participar', 'Aceptar', {
+    this._snackBar.open('ACCENT COLOR', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'accent-filled'
     });
   }
   warnFilled() {
-    this._snackBar.open('Error', 'Aceptar', {
+    this._snackBar.open('WARN COLOR', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'warn-filled'
     });
   }
   successFilled() {
-    this._snackBar.open('Buen trabajo ', 'Aceptar', {
+    this._snackBar.open('SUCCESS COLOR ', 'Aceptar', {
       horizontalPosition: 'center',
       verticalPosition: 'top',
       panelClass:'success-filled'
