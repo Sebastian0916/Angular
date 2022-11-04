@@ -26,10 +26,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSliderModule} from '@angular/material/slider';
 
-
-
-
-
 @NgModule({
   declarations: [AppComponent, NavbarComponent, AlertsComponent],
   imports: [
@@ -54,7 +50,7 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSlideToggleModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSliderModule
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

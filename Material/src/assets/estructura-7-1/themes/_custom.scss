@@ -18,7 +18,3 @@ $my-theme: mat.define-light-theme(
 
 @include mat.button-theme($my-theme);
 
-mat-badge-content.mat-success{
-    color: $white-color;
-    background-color: $success-color;
-}
