@@ -1,10 +1,11 @@
-import React from "react";
-import Grid from '@mui/material/Grid';
+import React from 'react'
 
 const DataBase = () => {
-  return <Grid iten xs={8}>
+  return (
+    <div style={{marginLeft:'500px'}}>
+      Holaaaa
+    </div>
+  )
+}
 
-  </Grid>;
-};
-
-export default DataBase;
+export default DataBase

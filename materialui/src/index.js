@@ -4,17 +4,23 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Autenticacion from "./pages/Autenticacion/Autenticacion";
+import DataBase from "./pages/Database/DataBase";
+import Storage from "./pages/Storage/Storage";
+import Hosting from "./pages/Hosting/Hosting";
+import Functions from "./pages/Functions/Functions";
+import MachineLearning from "./pages/MachineLearning/MachineLearning";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="authentication" element={<authentication />} />
-        <Route path="database" element={<database />} />
-        <Route path="storage" element={<storage />} />
-        <Route path="hosting" element={<hosting />} />
-        <Route path="functions" element={<functions />} />
-        <Route path="machine-learning" element={<machine-learning />} />
+        <Route path="authentication" element={<Autenticacion />} />
+        <Route path="database" element={<DataBase />} />
+        <Route path="hosting" element={<Hosting />} />
+        <Route path="functions" element={<Functions />} />
+        <Route path="machine-learning" element={<MachineLearning />} />
+        <Route path="storage" element={<Storage />} />
       </Route>
     </Routes>
   </BrowserRouter>
