@@ -28,7 +28,7 @@ export default function PruebasComponent() {
       <h1>El efecto - UseEfecct</h1>
 
       <form>
-        <p className={contador === 10 ? "label label-green" : "label"}>
+        <p className={contador == 10 ? "label label-green" : "label"}>
           {usuario}
         </p>
         <p>{fecha}</p>
@@ -36,7 +36,7 @@ export default function PruebasComponent() {
       </form>
       <button onClick={cambiarFecha}>Cambiar fecha</button>
       <br />
-      {usuario === "Sebastian Vera" ? <Aviso /> : ""}
+      {usuario == "Sebastian Vera" ? <Aviso /> : ""}
     </div>
   );
 }
