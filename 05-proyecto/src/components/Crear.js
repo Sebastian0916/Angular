@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Input from "@mui/material/Input";
-import TextareaAutosize from '@mui/material/TextareaAutosize';
+import TextareaAutosize from "@mui/material/TextareaAutosize";
+import { GuardarLocalStorage } from "../helpers/GuardarLocalStorage";
 
 export default function Crear() {
   const tituloComponente = "Añadir Pelicula";
@@ -28,27 +29,17 @@ export default function Crear() {
     setPeliculaState(pelicula);
     console.log(peliculaState);
 
-    guardarLocalStorage(pelicula);
+    GuardarLocalStorage('pelicula',pelicula);
   };
 
-  const guardarLocalStorage = (pelicula) => {
-    let elementos = JSON.parse(localStorage.getItem("pelis"));
-    console.log(elementos);
-
-    if (Array.isArray(elementos)) {
-      elementos.push(pelicula);
-    } else {
-      elementos = [pelicula];
-    }
-
-    // localStorage.setItem("pelis", JSON.stringify([pelicula]));
-  };
   return (
     <>
       <div className="add">
         <h3 className="title">{tituloComponente}</h3>
 
-        {titulo && descripcion ? "haz creado pelicula: " + titulo : ""}
+        {titulo && descripcion
+          ? "haz creado pelicula: " + titulo + descripcion
+          : ""}
 
         <form onSubmit={conseguirDatos}>
           <Input
