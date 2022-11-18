@@ -3,7 +3,7 @@ import Input from "@mui/material/Input";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import { GuardarLocalStorage } from "../helpers/GuardarLocalStorage";
 
-export default function Crear() {
+export default function Crear({setListadoState}) {
   const tituloComponente = "Añadir Pelicula";
 
   const [peliculaState, setPeliculaState] = useState({
@@ -27,9 +27,15 @@ export default function Crear() {
     };
 
     setPeliculaState(pelicula);
-    console.log(peliculaState);
+    console.log(peliculaState); 
+
+    setListadoState( elementos =>{
+      return [...elementos,pelicula]
+    })
 
     GuardarLocalStorage('pelicula',pelicula);
+
+
   };
 
   return (
