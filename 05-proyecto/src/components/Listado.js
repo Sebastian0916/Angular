@@ -44,7 +44,7 @@ export default function Listado({ listadoState, setListadoState }) {
                 Borrar
               </Button>
               {editar === peli.id && (
-              <Editar/>
+              <Editar peli={peli} conseguirPeliculas={conseguirPeliculas} setEditar={setEditar} setListadoState={setListadoState}/>
               )}
             </article>
           );
