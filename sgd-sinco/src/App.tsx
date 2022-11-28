@@ -1,20 +1,20 @@
-import React from 'react';
-import './App.css';
-import Login from './components/Login/Login';
-import Aplicacion from './components/aplicacion/Aplicacion';
-import { ThemeProvider } from '@emotion/react';
-import { CssBaseline } from '@mui/material';
-import { tema } from './Configuracion/Configuracion';
+import React from "react";
+import "./App.css";
+import Login from "./components/Login/Login";
+import HeaderAppBar from "./components/aplicacion/Header/HeaderAppBar";
+import Actividades from "./components/aplicacion/Actividades/Actividades";
+import CardComponent from "./components/aplicacion/Cards/CardComponent";
 function App() {
   return (
-    <ThemeProvider theme={tema}>
-
-    <CssBaseline />
-
-    <Aplicacion/>
-
-    </ThemeProvider>
-    
+    <>
+      <HeaderAppBar />
+      <Actividades />
+      {
+        [1,2,3].map(()=>{
+          return <CardComponent/>
+        })
+      }
+    </>
   );
 }
 
